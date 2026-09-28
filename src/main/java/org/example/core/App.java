@@ -15,4 +15,24 @@ public class App {
         IO.println("Numbers max: " + Math.max(x, Math.max(y, z)) );
     }
 
+
+
+    public static void task4() {
+        IO.println("Give parameters for equation ax^2 + bx + c = 0");
+        final var a = Double.parseDouble(IO.readln("a: "));
+        final var b = Double.parseDouble(IO.readln("b: "));
+        final var c = Double.parseDouble(IO.readln("c: "));
+
+        final var D = Math.pow(b, 2) - 4 * a * c;
+
+        IO.println("Discriminant: " + D);
+
+        if (D < 0) IO.println("No roots in real numbers");
+        else if (D == 0) IO.println("Root: " + - b / (2 * a));
+        else {
+            IO.println("Root1: " + (-b + Math.sqrt(D)) / (2 * a));
+            IO.println("Root2: " + (-b - Math.sqrt(D)) / (2 * a));
+        }
+    }
+
 }
