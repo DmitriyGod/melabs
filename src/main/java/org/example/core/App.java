@@ -15,4 +15,13 @@ public class App {
         IO.println("Numbers max: " + Math.max(x, Math.max(y, z)) );
     }
 
+    public static void task3() {
+        final var x = Integer.parseInt(IO.readln("first number: "));
+        final var y = Integer.parseInt(IO.readln("second number: "));
+        final var z = Integer.parseInt(IO.readln("third number: "));
+
+        IO.println("Numbers production: " + (x * y * z));
+        IO.println("Numbers average: " + (x * y * z) / 3);
+        IO.println("Numbers max: " + Math.max(x, Math.max(y, z)) );
+    }
 }
