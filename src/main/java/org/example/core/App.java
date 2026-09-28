@@ -44,4 +44,8 @@ public class App {
         IO.println("Numbers average: " + (x * y * z) / 3);
         IO.println("Numbers max: " + Math.max(x, Math.max(y, z)) );
     }
+
+    public static void task5() {
+        // о, сделал!
+    }
 }
